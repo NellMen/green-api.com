@@ -13,7 +13,7 @@
 
 ## Требования
 
-- Node.js 18+
+- Node.js 20+
 - Аккаунт и авторизованный инстанс в GREEN-API
 - У инстанса должен быть **пустой** `webhookUrl` (получение через HTTP API)
 - В настройках инстанса включите входящие уведомления (`incomingWebhook`)
@@ -23,3 +23,5 @@
 ```bash
 npm install
 npm run dev
+
+Откройте http://localhost:3000
