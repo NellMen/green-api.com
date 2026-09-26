@@ -1,3 +1,16 @@
+# MAX Chat — Green-API Client
+
+Тестовое задание: интерфейс для отправки и получения сообщений в MAX через GREEN-API.
+
+## Возможности
+
+- Авторизация по `idInstance` и `apiTokenInstance`
+- Создание чата по номеру телефона
+- Отправка текстовых сообщений
+- Приём входящих через long polling
+- Удаление уведомления после обработки
+- Список чатов и окно переписки в реальном времени
+
 ## Требования
 
 - Node.js 18+
@@ -10,27 +23,3 @@
 ```bash
 npm install
 npm run dev
-```
-
-Откройте http://localhost:3000.
-
-В режиме разработки запросы к GREEN-API идут через локальный Vite-прокси (без CORS).
-
-Сборка production:
-
-```bash
-npm run build
-npm run preview
-```
-
-## Стек
-
-- React 19 + TypeScript
-- Vite
-- Redux Toolkit
-
-## Структура
-
-- `src/api/greenApi.ts` — клиент GREEN-API
-- `src/store/` — Redux (auth, chats)
-- `src/hooks/useNotificationPolling.ts` — опрос очереди уведомлений
