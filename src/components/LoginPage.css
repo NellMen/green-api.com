@@ -1,0 +1,115 @@
+.login-page {
+  min-height: 100%;
+  display: grid;
+  place-items: center;
+  padding: 24px;
+  background:
+    radial-gradient(ellipse 80% 60% at 20% 10%, rgba(22, 136, 254, 0.18), transparent 55%),
+    radial-gradient(ellipse 70% 50% at 90% 80%, rgba(10, 90, 200, 0.12), transparent 50%),
+    linear-gradient(160deg, #eef4fb 0%, #f7f9fc 45%, #e8eef6 100%);
+}
+
+.login-panel {
+  width: min(420px, 100%);
+  background: rgba(255, 255, 255, 0.92);
+  border: 1px solid rgba(15, 40, 80, 0.08);
+  border-radius: 20px;
+  padding: 36px 32px;
+  box-shadow: 0 20px 50px rgba(20, 50, 100, 0.1);
+  backdrop-filter: blur(8px);
+}
+
+.login-brand {
+  text-align: center;
+  margin-bottom: 28px;
+}
+
+.login-logo {
+  width: 56px;
+  height: 56px;
+  margin: 0 auto 14px;
+  border-radius: 16px;
+  display: grid;
+  place-items: center;
+  font-weight: 800;
+  font-size: 28px;
+  color: #fff;
+  background: linear-gradient(145deg, #1688fe, #0b5fd4);
+  letter-spacing: -0.04em;
+}
+
+.login-brand h1 {
+  margin: 0;
+  font-size: 28px;
+  font-weight: 700;
+  letter-spacing: -0.03em;
+  color: #0f1724;
+}
+
+.login-brand p {
+  margin: 8px 0 0;
+  color: #6b7a90;
+  font-size: 14px;
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.login-form label {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  font-size: 13px;
+  font-weight: 600;
+  color: #3d4a5c;
+}
+
+.login-form input {
+  height: 44px;
+  border-radius: 12px;
+  border: 1px solid #d5dee9;
+  padding: 0 14px;
+  font: inherit;
+  font-weight: 400;
+  background: #f8fafc;
+  color: #0f1724;
+  transition: border-color 0.15s ease, box-shadow 0.15s ease;
+}
+
+.login-form input:focus {
+  outline: none;
+  border-color: #1688fe;
+  box-shadow: 0 0 0 3px rgba(22, 136, 254, 0.18);
+  background: #fff;
+}
+
+.login-form button {
+  margin-top: 8px;
+  height: 46px;
+  border: none;
+  border-radius: 12px;
+  background: linear-gradient(145deg, #1688fe, #0d6fe0);
+  color: #fff;
+  font: inherit;
+  font-weight: 650;
+  cursor: pointer;
+  transition: transform 0.12s ease, filter 0.12s ease;
+}
+
+.login-form button:hover {
+  filter: brightness(1.05);
+  transform: translateY(-1px);
+}
+
+.login-form button:active {
+  transform: translateY(0);
+}
+
+.login-error {
+  margin: 0;
+  color: #d64545;
+  font-size: 13px;
+}
